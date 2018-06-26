@@ -51,12 +51,7 @@
                 data:$("#form").serialize(),
                 success:function(){
                     $('#addModal').modal('hide');
-                    // $('#addModal').on('hidden', function(){
-                    //     $('#addModal2').modal('show')
-                    // })
-                    //location.reload();
-                    $('#addModal2').modal('show')
-                    
+                    location.reload();
                 }
             })
         });
@@ -132,40 +127,6 @@
         </div>
     </div>
 </div>
-
-<!-- modal 2 -->
-<div class="modal fade bs-example-modal-lg" id="addModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" style="width:500px;">
-        <div class="modal-content">
- 
-            <div class="modal-header" style="background:#343a40;">
-                <h4 class="modal-title" id="myModalLabel">Tambah Data</h4>
-            </div>
-            <div class="modal-body">
-            <form class="form-horizontal form-label-left" id="form" name="form">
-                    <div class="form-group">
-                      <label class="control-label col-sm-3 col-sm-3 col-xs-12">Tanggal Pembelian</label>
-                      <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="date" class="form-control" id="tanggal" name="tanggal" placeholder="tanggal pembelian" />
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-3 col-sm-3 col-xs-12">Nota Pembelian</label>
-                      <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="text" class="form-control" id="nota" name="nota" placeholder="nota pembelian" />
-                      </div>
-                    </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary" id="save">Simpan</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 
 <div class="modal fade bs-example-modal-lg" id="editModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" style="width:500px;">

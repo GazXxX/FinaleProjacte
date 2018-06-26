@@ -44,9 +44,5 @@ class Produk extends CI_Controller {
         $flag  = array('id_produk'=>$id);
         $this->Mproduk->deleteProduk($flag);
     }
-    
-    public function data(){
-      $data['produk'] = $this->Mpembelian->tampil(); //memanggil function tampil di model m_data
-      $this->load->view('v_pembelian', $data); //memasukan data tersebut ke view tampil_data
-    } 
+ 
 }
