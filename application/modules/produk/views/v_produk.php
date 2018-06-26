@@ -3,7 +3,7 @@
     <h2><button type="button" class="add btn btn-primary"><i class="fa fa-plus-square"></i> Tambah Data </button></h2>
 <div class="clearfix"></div>
 </div>
-<table class="table table-striped table-responsive" id="datatables">
+<table class="table table-hover table-responsive" id="datatables">
 <thead>
     <tr>
         <th>Nomor</th>
@@ -22,8 +22,8 @@
         echo "<td>".$row->nama_produk."</td>";
         echo "<td>".$row->qty_produk."</td>";
         echo "<td>
-            <button type='button' class='btn btn-primary btn-xs' onclick=edit('".$row->id_produk."') ><i class='fa fa-edit'></i></button>
-            <button type='button' class='btn btn-warning btn-xs' onclick=del('".$row->id_produk."') ><i class='fa fa-trash'></i></button>
+            <button type='button' class='btn btn-success btn-xs' onclick=edit('".$row->id_produk."') ><i class='fa fa-edit'></i></button>
+            <button type='button' class='btn btn-danger btn-xs' onclick=del('".$row->id_produk."') ><i class='fa fa-trash'></i></button>
             </td>";
         echo "</tr>";
        

@@ -42,7 +42,7 @@
             <div class="menu_section">
               <h3>General</h3>
               <ul class="nav side-menu">
-                <li><?php echo anchor("dashboard2","<i class='fa fa-home'></i> Dashboard");?></li>
+                <li><?php echo anchor("dashboard","<i class='fa fa-home'></i> Dashboard");?></li>
                 <li><?php echo anchor("produk","<i class='fa fa-tags'></i> Produk");?></li>
                 <li><?php echo anchor("supplier","<i class='fa fa-building'></i> Supplier");?></li>
                 <li><?php echo anchor("pembelian","<i class='fa fa-briefcase'></i> Pembelian");?></li>
@@ -85,6 +85,7 @@
       <div class="right_col" role="main">
         <div class="">
           <div class="page-title">
+
             <div class="title_left">
               <h3>
               <?php if(isset($title)){echo $title ;} ;?> 
@@ -92,7 +93,49 @@
             </div>
           </div>
           <div class="clearfix"></div>
-       
+          <div class="row">
+                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                          <div class="icon"><i class='fa fa-tags'></i>
+                          </div>
+                          <div class="count">179</div>
+
+                          <h3><?php echo anchor("produk","Produk");?></h3>
+                          <p>Cek produk yang tersedia.</p>
+
+                        </div>
+                      </div>
+                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                          <div class="icon"><i class='fa fa-building'></i>
+                          </div>
+                          <div class="count">179</div>
+
+                          <h3><?php echo anchor("supplier","<i></i> Supplier");?></h3>
+                          <p>Daftar penyedia barang.</p>
+                        </div>
+                      </div>
+                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                          <div class="icon"><i class='fa fa-briefcase'></i>
+                          </div>
+                          <div class="count">179</div>
+
+                          <h3><?php echo anchor("pembelian","<i></i> Pembelian");?></h3>
+                          <p>Daftar pembelian perusahaan.</p>
+                        </div>
+                      </div>
+                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats">
+                          <div class="icon"><i class='fa fa-shopping-cart'></i>
+                          </div>
+                          <div class="count">179</div>
+
+                          <h3><?php echo anchor("penjualan","<i></i> Penjualan");?></h3>
+                          <p>Barang yang sedang dijual.</p>
+                        </div>
+                      </div>
+                    </div>
           <div class="row">
             
             <div class="col-md-12 col-sm-12 col-xs-12" style="min-height:530px">

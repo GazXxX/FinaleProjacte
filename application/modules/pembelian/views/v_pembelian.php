@@ -3,7 +3,7 @@
     <h2><button type="button" class="add btn btn-primary"><i class="fa fa-plus-square"></i> Tambah Data </button></h2>
 <div class="clearfix"></div>
 </div>
-<table class="table table-striped table-responsive" id="datatables">
+<table class="table table-hover table-responsive" id="datatables">
 <thead>
     <tr>
         <th>Nomor</th>
@@ -30,8 +30,8 @@
         echo "<td>".$row->nota_pembelian."</td>";
         echo "<td>".$row->status_pembelian."</td>";
         echo "<td>
-            <button type='button' class='btn btn-primary btn-xs' onclick=edit('".$row->id_pembelian."') ><i class='fa fa-edit'></i></button>
-            <button type='button' class='btn btn-warning btn-xs' onclick=del('".$row->id_pembelian."') ><i class='fa fa-trash'></i></button>
+            <button type='button' class='btn btn-success btn-xs' onclick=edit('".$row->id_pembelian."') ><i class='fa fa-edit'></i></button>
+            <button type='button' class='btn btn-danger btn-xs' onclick=del('".$row->id_pembelian."') ><i class='fa fa-trash'></i></button>
             </td>";
         echo "</tr>";
        
@@ -85,15 +85,14 @@
     $.getJSON('<?php echo site_url();?>/pembelian/editPembelian/'+id,
         function( response ) {
             $("#editModal").modal('show');
-            $("#ntanggal").val(response['tanggal_pembelian']);
             $("#nsupplier_id").val(response['supplier_id']);
             $("#nproduk_id").val(response['produk_id']);
+            $("#ntanggal").val(response['tanggal_pembelian']);
             $("#nnota").val(response['nota_pembelian']);
             $("#nstatus").val(response['status_pembelian']);
             $("#nharga").val(response['harga_pembelian']);
             $("#njumlah").val(response['jumlah_pembelian']);
-            $("#nqty").val(response['qty_pembelian']);
-            
+            $("#nqty").val(response['qty_pembelian']);         
             $("#oid").val(response['id_pembelian']);
         }
     );
@@ -144,7 +143,7 @@
                     <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Tanggal</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="xhr" class="form-control has_datetime" id="tanggal" name="tanggal" placeholder="yyyy-mm-dd" />
+                        <input type="date" class="form-control has_datetime" id="tanggal" name="tanggal" placeholder="yyyy-mm-dd" />
                       </div>
                     </div>
                     <div class="form-group">
@@ -220,7 +219,7 @@
                     <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Tanggal Pembelian</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="text" class="form-control" id="ntanggal" name="ntanggal" placeholder="tanggal pembelian" />
+                        <input type="date" class="form-control has_datetime" id="ntanggal" name="ntanggal" placeholder="tanggal pembelian" />
                       </div>
                     </div>
                     <div class="form-group">

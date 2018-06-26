@@ -27,6 +27,15 @@ class Mpenjualan extends CI_Model {
         $this->db->where($flag);
         return $this->db->delete('penjualan');
     }
-    
+
+    function tampil(){
+        $sql = "SELECT penjualan.id_penjualan, produk.kode_produk, penjualan.tanggal_penjualan, penjualan.harga_penjualan, penjualan.keterangan 
+        FROM penjualan JOIN produk ON penjualan.produk_id=produk.id_produk";
+        return $this->db->query($sql);
+    }
+    function getProduct(){
+        $sql = "SELECT id_produk, nama_produk FROM produk";
+        return $this->db->query($sql)->result_array();
+    }
     
 }

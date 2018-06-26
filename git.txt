@@ -1,0 +1,7 @@
+
+
+$ git add .
+
+$ git commit -m 'Update 26/06/18Selasa'
+
+$ git push origin master
