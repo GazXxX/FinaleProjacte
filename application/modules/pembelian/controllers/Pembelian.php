@@ -43,7 +43,7 @@ class Pembelian extends CI_Controller {
         echo json_encode($get);
     }
     function newPembelian(){
-        $flag  = array('id_produk'=>$this->input->post('oid'));
+        $flag  = array('id_pembelian'=>$this->input->post('oid'));
         $edit = array(
             'supplier_id' => $this->input->post('nsupplier_id'),
             'produk_id' => $this->input->post('nproduk_id'),
