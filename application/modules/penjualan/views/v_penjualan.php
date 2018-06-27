@@ -130,7 +130,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-sm-3 col-sm-3 col-xs-12">keterangan</label>
+                      <label class="control-label col-sm-3 col-sm-3 col-xs-12">Keterangan</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
                         <input type="text" class="form-control" id="keterangan" name="keterangan" placeholder="keterangan" />
                       </div>
@@ -157,7 +157,7 @@
                    <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Kode Produk</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <select name="produk_id" id="produk_id">
+                        <select name="nproduk_id" id="nproduk_id">
                         <option id="nproduk_id" value="" selected="selected">---------Pilih Produk---------</option>
                         <?php foreach($products as $p):?>
                         <option value="<?php echo $p['id_produk'] ?>"><?php echo $p['nama_produk']?></option>
@@ -165,18 +165,11 @@
                         </select>
                       </div>
                     </div>
-                     <!-- <div class="form-group">
-                      <label class="control-label col-sm-3 col-sm-3 col-xs-12">Produk</label>
-                      <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="hidden" class="form-control" id="oid" name="oid" />
-                        <input type="text" class="form-control" id="nproduk_id" name="nproduk_id" placeholder="tanggal penjualan" />
-                      </div>
-                    </div> -->
                     <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Tanggal Penjualan</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
                         <input type="hidden" class="form-control" id="oid" name="oid" />
-                        <input type="text" class="form-control" id="ntanggal" name="ntanggal" placeholder="tanggal penjualan" />
+                        <input type="date" class="form-control" id="ntanggal" name="ntanggal" placeholder="tanggal penjualan" />
                       </div>
                     </div>
                     <div class="form-group">

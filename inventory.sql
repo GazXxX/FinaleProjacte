@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 27, 2018 at 08:27 AM
+-- Generation Time: Jun 27, 2018 at 10:32 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -44,10 +44,10 @@ CREATE TABLE `pembelian` (
 --
 
 INSERT INTO `pembelian` (`id_pembelian`, `supplier_id`, `produk_id`, `tanggal_pembelian`, `harga_pembelian`, `qty_pembelian`, `nota_pembelian`, `status_pembelian`) VALUES
-(2, 2, 2, '2018-05-05', 123, 1, 'zf1', 'Lunas'),
-(4, 3, 12, '2018-05-06', 200000, 22, 'NOTA1112', 'Hutang'),
-(6, 4, 2, '2018-06-30', 8000000, 8, 'NOTA001', 'Lunas'),
-(8, 3, 12, '2018-06-06', 666000, 666, 'NOTA666', 'Lunas');
+(2, 2, 2, '2018-05-05', 10000000, 12, 'ASUS0012', 'Lunas'),
+(6, 4, 13, '2018-06-30', 8000000, 8, 'NOTA001', 'Hutang'),
+(10, 4, 4, '2018-06-30', 12000000, 40, 'LG0023', 'Lunas'),
+(11, 3, 12, '2018-06-26', 666006, 666, '666SIXSIXSIX', 'Lunas');
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,7 @@ CREATE TABLE `penjualan` (
 --
 
 INSERT INTO `penjualan` (`id_penjualan`, `produk_id`, `tanggal_penjualan`, `harga_penjualan`, `keterangan`) VALUES
-(1, 28, '2018-06-26', 4000000, 'Sedang dikirim'),
+(1, 28, '2018-06-30', 4000000, 'Sedang dikirim'),
 (3, 4, '2018-06-25', 2300000, 'Gaming Laptop'),
 (4, 16, '2018-06-28', 10000000, 'Lenovo Gaming Legion');
 
@@ -92,7 +92,7 @@ CREATE TABLE `produk` (
 INSERT INTO `produk` (`id_produk`, `kode_produk`, `nama_produk`, `qty_produk`) VALUES
 (2, 'LP00001', 'ASUS Lenovo', 123),
 (4, 'GN0100', 'Gaming Nonepsal', 9),
-(8, '001asd', 'Hanmeo', 3),
+(8, 'HD0031', 'Harddisk SATA', 55),
 (10, 'LO0001', 'Lombre', 12),
 (11, 'HC000', 'HimpamCoder', 12),
 (12, 'STN666', 'Satan Snack', 666),
@@ -196,13 +196,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `pembelian`
 --
 ALTER TABLE `pembelian`
-  MODIFY `id_pembelian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_pembelian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `penjualan`
 --
 ALTER TABLE `penjualan`
-  MODIFY `id_penjualan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_penjualan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `produk`

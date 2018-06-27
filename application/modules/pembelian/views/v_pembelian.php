@@ -80,6 +80,7 @@
                 }
             })
         });
+
     });
    function edit(id){
     $.getJSON('<?php echo site_url();?>/pembelian/editPembelian/'+id,
@@ -194,11 +195,10 @@
             </div>
             <div class="modal-body">
             <form class="form-horizontal form-label-left" id="form2" name="form2">
-              <input type="hidden" class="form-control" id="oid" name="oid" />
                     <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Kode Supplier</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <select name="supplier_id" id="supplier_id">
+                        <select name="nsupplier_id" id="nsupplier_id">
                             <option id="nsupplier_id" value="none" selected="selected">---------Pilih Supplier--------</option>
                             <?php foreach($suppliers as $s):?>
                             <option value="<?php echo $s['id_supplier'] ?>"><?php echo $s['nama_supplier']?></option>
@@ -207,9 +207,12 @@
                       </div>
                     </div>
                     <div class="form-group">
+                      <input type="hidden" class="form-control" id="oid" name="oid" />
+                    </div>
+                    <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Kode Produk</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <select name="produk_id" id="produk_id">
+                        <select name="nproduk_id" id="nproduk_id">
                         <option id="nproduk_id" value="" selected="selected">---------Pilih Produk---------</option>
                         <?php foreach($products as $p):?>
                         <option value="<?php echo $p['id_produk'] ?>"><?php echo $p['nama_produk']?></option>

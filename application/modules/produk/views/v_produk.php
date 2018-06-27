@@ -115,7 +115,7 @@
                     <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Jumlah</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="number" class="form-control" id="qty" name="qty" placeholder="qty produk" />
+                        <input type="number" class="form-control" id="qty" name="qty" placeholder="jumlah produk" />
                       </div>
                     </div>
             </form>
@@ -154,7 +154,7 @@
                     <div class="form-group">
                       <label class="control-label col-sm-3 col-sm-3 col-xs-12">Jumlah</label>
                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="number" class="form-control" id="nqty" name="nqty" placeholder="qty produk" />
+                        <input type="number" class="form-control" id="nqty" name="nqty" placeholder="jumlah produk" />
                       </div>
                     </div>
             </form>
