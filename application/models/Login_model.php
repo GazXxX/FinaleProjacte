@@ -6,5 +6,8 @@ class Login_model extends CI_Model{
 		$query=$this->db->query("SELECT * FROM user WHERE username='$username' AND pass=MD5('$password') LIMIT 1");
 		return $query;
 	}
-
+	/*function changePassword($username,$data){
+        $this->db->where($username);
+        return $this->db->update('user',$data);
+    }*/
 }

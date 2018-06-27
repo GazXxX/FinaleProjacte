@@ -98,7 +98,7 @@
                         <div class="tile-stats">
                           <div class="icon"><i class='fa fa-tags'></i>
                           </div>
-                          <div class="count">179</div>
+                          <div class="count"><?php echo $produk['total'] ?></div>
 
                           <h3><?php echo anchor("produk","Produk");?></h3>
                           <p>Cek produk yang tersedia.</p>
@@ -109,7 +109,7 @@
                         <div class="tile-stats">
                           <div class="icon"><i class='fa fa-building'></i>
                           </div>
-                          <div class="count">179</div>
+                          <div class="count"><?php echo $supplier['total'] ?></div>
 
                           <h3><?php echo anchor("supplier","<i></i> Supplier");?></h3>
                           <p>Daftar penyedia barang.</p>
@@ -119,7 +119,7 @@
                         <div class="tile-stats">
                           <div class="icon"><i class='fa fa-briefcase'></i>
                           </div>
-                          <div class="count">179</div>
+                          <div class="count"><?php echo $pembelian['total'] ?></div>
 
                           <h3><?php echo anchor("pembelian","<i></i> Pembelian");?></h3>
                           <p>Daftar pembelian perusahaan.</p>
@@ -129,7 +129,7 @@
                         <div class="tile-stats">
                           <div class="icon"><i class='fa fa-shopping-cart'></i>
                           </div>
-                          <div class="count">179</div>
+                          <div class="count"><?php echo $penjualan['total'] ?></div>
 
                           <h3><?php echo anchor("penjualan","<i></i> Penjualan");?></h3>
                           <p>Barang yang sedang dijual.</p>

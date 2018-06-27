@@ -12,7 +12,7 @@
         <th>Tanggal Pembelian</th>
         <th>Harga</th>
         <th>Jumlah</th>
-        <th>nota</th>
+        <th>Nota</th>
         <th>Status Pembelian</th>
         <th>Action</th>
     </tr>
@@ -39,11 +39,11 @@
 </tbody>
 </table>
 </div>
-<style type="text/css">@import url("<?php echo base_url() . 'js/datatables/bootstrap-datetimepicker.min.css'; ?>");</style> 
+<!-- <style type="text/css">@import url("<?php echo base_url() . 'js/datatables/bootstrap-datetimepicker.min.css'; ?>");</style>  -->
 <style type="text/css">@import url("<?php echo base_url() . 'js/datatables/jquery.dataTables.min.css'; ?>");</style>
 <script type='text/javascript' src="<?php echo base_url(); ?>js/datatables/jquery.dataTables.min.js"></script>
 <script type='text/javascript' src="<?php echo base_url(); ?>js/datatables/dataTables.bootstrap.js"></script>
-<script type='text/javascript' src="<?php echo base_url(); ?>js/datatables/bootstrap-datetimepicker.min.js"></script>
+<!-- <script type='text/javascript' src="<?php echo base_url(); ?>js/datatables/bootstrap-datetimepicker.min.js"></script> -->
 
 
 <script type="text/javascript">
@@ -258,6 +258,6 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $(".has_datetime").datetimepicker({format: 'YYYY-MM-DD'});
-</script> 
+</script>  -->

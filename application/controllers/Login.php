@@ -35,5 +35,11 @@ class Login extends CI_Controller{
         redirect($url);
     }
 
+    /*function changePassword($username){
+        $data = array(
+            'password' => md5($this->input->post('password'))
+        );
+        $this->login_model->changePassword($username,$data);
+    }*/
 }
 
